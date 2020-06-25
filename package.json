@@ -1,0 +1,29 @@
+{
+  "name": "bss-devops-authorizer-verifi",
+  "version": "1.0.0",
+  "description": "BSS Lambda Authorizer for Verifi",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && npm run copy && cd dist && npm install --production && cd -",
+    "copy": "cp package*.json *.md dist/",
+    "package": "npm run build && cd dist && zip lambda -r * && cd -",
+    "start": "npm run build && cd dist && tsc -w"
+  },
+  "keywords": [
+    "lambda"
+  ],
+  "author": "Ethan Dave B. Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.25.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^13.13.5",
+    "aws-sdk": "^2.676.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
+  }
+}

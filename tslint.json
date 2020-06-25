@@ -1,0 +1,42 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "eofline": false,
+    "object-literal-shorthand": false,
+    "interface-name": [true, "never-prefix"],
+    "arrow-parens": false,
+    "ban-types": [true, ["String", "Use string instead"]],
+    "no-unused-expression": [true, "allow-new"],
+    "member-access": [true, "no-public"],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "private-static-field",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "trailing-comma": [false]
+  },
+  "rulesDirectory": []
+}
