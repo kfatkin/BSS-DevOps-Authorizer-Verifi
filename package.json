@@ -22,7 +22,7 @@
     "@types/jsonwebtoken": "^8.5.0",
     "@types/moment": "^2.13.0",
     "@types/node": "^13.13.5",
-    "aws-sdk": "^2.676.0",
+    "aws-sdk": "^2.814.0",
     "tslint": "^6.1.2",
     "typescript": "^3.8.3"
   }
